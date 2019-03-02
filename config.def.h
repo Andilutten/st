@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Code:style=Bold:pixelsize=14:antialias=true:autohint=true";
+static char *font = "monospace:style=Bold:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -133,7 +133,7 @@ static unsigned int defaultunderline = 7;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 6;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers

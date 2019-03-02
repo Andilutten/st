@@ -1,11 +1,11 @@
-/* See LICENSE file for copyright and license details. */
+/* See LICENSE file for copyright and license details */
 
 /*
  * appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Code:style=Bold:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Terminus:style=Bold:pixelsize=18:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -80,7 +80,7 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
 unsigned int alpha = 0xff;
@@ -89,39 +89,40 @@ unsigned int alpha = 0xff;
 static const char *colorname[] = {
 
   /* 8 normal colors */
-  [0] = "#2d2b55", /* black   */
-  [1] = "#ec3a37", /* red     */
-  [2] = "#a5ff90", /* green   */
-  [3] = "#ff9d00", /* yellow  */
-  [4] = "#b362ff", /* blue    */
-  [5] = "#fb94ff", /* magenta */
-  [6] = "#9effff", /* cyan    */
-  [7] = "#a39e9b", /* white   */
+  [0] = "#4e4e4e", /* black   */
+  [1] = "#d68787", /* red     */
+  [2] = "#5f865f", /* green   */
+  [3] = "#d8af5f", /* yellow  */
+  [4] = "#85add4", /* blue    */
+  [5] = "#d7afaf", /* magenta */
+  [6] = "#87afaf", /* cyan    */
+  [7] = "#d0d0d0", /* white   */
 
   /* 8 bright colors */
-  [8]  = "#776e71", /* black   */
-  [9]  = "#ff628c", /* red     */
-  [10] = "#a5ff90", /* green   */
-  [11] = "#fad000", /* yellow  */
-  [12] = "#4d21fc", /* blue    */
-  [13] = "#a599e9", /* magenta */
-  [14] = "#9effff", /* cyan    */
-  [15] = "#e7e9db", /* white   */
+  [8]  = "#626262", /* black   */
+  [9]  = "#d75f87", /* red     */
+  [10] = "#87af87", /* green   */
+  [11] = "#ffd787", /* yellow  */
+  [12] = "#add4fb", /* blue    */
+  [13] = "#ffafaf", /* magenta */
+  [14] = "#87d7d7", /* cyan    */
+  [15] = "#e4e4e4", /* white   */
+
+  [255] = 0,
 
   /* special colors */
-  [256] = "#2d2b55", /* background */
-  [257] = "#b362ff", /* foreground */
+  [256] = "#cccccc", /* background */
+  [257] = "#252525", /* foreground */
 };
-
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
-static unsigned int defaultcs = 257;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 257;
+static unsigned int defaultcs = 7;
+static unsigned int defaultrcs = 256;
 
 static unsigned int defaultitalic = 7;
 static unsigned int defaultunderline = 7;
@@ -133,7 +134,7 @@ static unsigned int defaultunderline = 7;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 6;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers
