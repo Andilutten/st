@@ -76,7 +76,7 @@ char *termname = "st-256color";
  *	it#$tabspaces,
  *
  * Secondly make sure your kernel is not expanding tabs. When running `stty
- * -a` »tab0« should appear. You can tell the terminal to not expand tabs by
+ * -a` »tab1« should appear. You can tell the terminal to not expand tabs by
  *  running following command:
  *
  *	stty tabs
@@ -84,9 +84,10 @@ char *termname = "st-256color";
 unsigned int tabspaces = 4;
 
 /* bg opacity */
-unsigned int alpha = 0xff;
+unsigned int alpha = 230;
 
 /* Terminal colors (16 first used in escape sequence) */
+/* #include "/home/andilutten/.cache/wal/colors-wal-st.h" */
 static const char *colorname[] = {
 
   /* 8 normal colors */
